@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Cartera.UsuarioClass" table="usuario" schema="mycarteradb">
+        <id name="idusuario">
+            <column name="idusuario" sql-type="int(10)"/>
+        </id>
+        <property name="identificacion">
+            <column name="identificacion" sql-type="int(10)"/>
+        </property>
+        <property name="telefono">
+            <column name="telefono" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>

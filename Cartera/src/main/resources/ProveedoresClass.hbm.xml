@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Cartera.ProveedoresClass" table="proveedores" schema="mycarteradb">
+        <id name="idpreoveedor">
+            <column name="idpreoveedor" sql-type="int(10)"/>
+        </id>
+        <property name="ingreso">
+            <column name="ingreso" sql-type="float" precision="-1"/>
+        </property>
+        <property name="egresos">
+            <column name="egresos" sql-type="float" precision="-1"/>
+        </property>
+        <property name="compras">
+            <column name="compras" sql-type="varchar(250)" length="250"/>
+        </property>
+        <property name="idcartera">
+            <column name="idcartera" sql-type="int(10)"/>
+        </property>
+        <property name="idusuario">
+            <column name="idusuario" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>

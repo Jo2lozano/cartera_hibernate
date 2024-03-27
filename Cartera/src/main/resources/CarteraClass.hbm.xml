@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Cartera.CarteraClass" table="cartera" schema="mycarteradb">
+        <id name="idcartera">
+            <column name="idcartera" sql-type="int(10)"/>
+        </id>
+        <property name="idusuario">
+            <column name="idusuario" sql-type="int(10)"/>
+        </property>
+        <property name="saldo">
+            <column name="saldo" sql-type="float" precision="-1"/>
+        </property>
+        <property name="fecha">
+            <column name="fecha" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>
